@@ -1,0 +1,490 @@
+
+/*GENERAL*/
+
+/*all*/
+
+body{
+    background-image: url("background_edited.jpg");
+    background-size: cover;
+    margin: 0;
+    font-size: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.heroimg{           /*Background image*/
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: -1;  
+}
+
+/*settings*/
+
+.white{
+    color: white;
+}
+
+.middle{
+    text-align: center;
+}
+
+.lfloat{        /*floats to the left*/
+    float: left;
+}
+
+.rfloat{        /*floats to the right*/
+    float: right;
+}
+
+.notop{     /*removes top margin and padding*/
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.date{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    text-indent: 0;
+}
+
+.height{      /*makes an element higher*/
+    height: 28em;
+}
+
+.nobottom{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.over{
+    overflow: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*small elements*/
+
+h1{
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-weight: normal;
+}
+
+/*big elements*/
+
+div.border{     /*add a red border under the headings*/
+    height:5px;
+    margin: 0 0 1em 0;
+    padding: 2.5px;
+    box-sizing: border-box;
+    background-color: red;
+    color: red;
+    width: 10em;
+    max-width: 100%;
+}
+
+div.bigbox{     /*all white sections, format*/
+    background-color: white;
+    width: 100%;
+    padding: 4% 6%;
+    box-sizing: border-box;
+    clear: both;
+    margin: 0;
+}
+
+div.halfbox{        /*divides the screen in 2 whites boxes*/
+    box-sizing: border-box;
+    width: 45%;
+    padding: 2em;
+    background-color: white;
+    margin-bottom: 4%;
+}
+
+        /*Scrollbar*/
+        
+::-webkit-scrollbar {
+    width: 13px;
+}
+  
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: red;
+}
+
+        /*Arrows for menus*/
+i {
+    border: solid red;
+    border-width: 0 .5vw .5vw 0;
+    display: inline-block;
+    padding: 1vw;
+}
+
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 7em 0 10em 0;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 7em 0 10em 0;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+i:hover{
+    border-color: darkred;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+.disabled:hover{
+    cursor: not-allowed;
+}
+
+        /*menus*/
+
+div.menu1{
+    float: left;
+    height:100%;
+    margin-right: 1em;
+}
+
+div.menu2{
+    float: right;
+    height: 100%;
+    margin-left: 1%;
+}
+
+/*SPECIFIC-MAIN PAGE*/
+
+/*header*/
+
+header{
+    height: 40vh;
+    font-size: 1.3em;
+}
+
+/*about*/
+
+div.about{
+    height: 18em;
+    overflow: auto;
+}
+
+/*Experience*/
+
+div.experience{
+    width: 22%;
+    padding: 1.5%;
+    box-sizing: border-box;
+    float: left;
+}
+
+h2.job{
+    margin: 4% 0;
+    font-size: 1.8em;
+    border-bottom: 2px solid red;
+}
+
+ul.job{
+    padding: 0;
+    list-style-position: inside;
+    overflow: auto;
+    max-height: 12em;
+}
+
+li{
+    padding: 0.25em 0;
+}
+
+/*Education*/
+
+div.education{
+    width: 58%;
+    box-sizing: border-box;
+    float: left;
+}
+
+div.column{
+    height: 20em;
+    float: left;
+    width: 45%;
+    max-width: 18em;
+}
+
+h2.diploma{
+    padding: 0;
+    margin: 0;
+}
+
+p.school{
+    text-indent: 0;
+    margin:0;
+    padding: 0.5em 0 1.5em 0;
+}
+
+div.awards{
+    width: 35%;
+    float: right;
+}
+
+ul.awards{
+    height: 18em;
+}
+
+li.awards{
+    font-size: 1.2em;
+}
+
+p.awards{
+    margin: .25em 0 1em 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+span.date{
+    font-size: 0.9em;
+    margin-left: 2em;
+}
+
+/*Projects*/
+
+div.projects{
+    padding: 4% 6%;
+    clear: both;
+}
+
+div.showcase{       /*White division*/
+    background-color: white;
+    margin: 2em 0;
+    padding: 2em 0;
+    overflow: auto;
+
+}
+
+.container {        /*Contains each images*/
+    width:22%;
+    margin: 1%;
+    position: relative;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  img.projects{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+.overlay {      /*the project's name, hidden until hover*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.container:hover .overlay {     /*shows the overlay*/
+    opacity: .7;
+}
+  
+.text {     /*styles the text within the overlay*/
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Skill*/
+
+div.skill{
+    clear: both;
+}
+
+div.skillname{      /*the skill name's width*/
+    float: left;
+    padding: 0;
+    width: 28%;
+    max-width: 10em;
+}
+
+p.skillname{        /*styles the skill name*/
+    text-indent: 0;
+    text-align: right;
+    margin-right: 5%;
+}
+
+div.skillbar{       /*represents the skill's level with a bar*/
+    background-color: red;
+    color: red;
+    height: 5px;
+    float: left;
+    margin-top: 1.9em;
+}
+
+        /*dictates the skill bar's width depending on the skill level*/
+
+div.expert{
+    width: 50%;
+}
+
+div.specialist{
+    width: 40%;
+    margin-right: 10%;
+}
+
+div.skilled{
+    width: 30%;
+    margin-right: 20%;
+}
+
+div.average{
+    width: 20%;
+    margin-right: 30%;
+}
+
+div.beginner{
+    width: 10%;
+    margin-right: 40%;
+}
+
+p.skilllevel{       /*names the skill level*/
+    margin-top: 15px;
+    float: left;
+    clear: right;
+    width: 20%;
+    max-width: 10em;
+    text-indent: 0;
+    margin-left: 2%;
+}
+
+/*Contact*/
+
+div.contact{
+    padding: 4% 6%;
+    clear: both;
+}
+
+address{
+    line-height: 2em;
+    text-align: center;
+    font-size: 2vw;
+}
+
+img.media{
+    height: 2vw;
+    width: auto;
+    border-radius: 50%;
+}
+
+a.contact:hover{
+    color: red;
+}
+
+/*cv download*/
+
+span.cvbutton{
+    background-color: rgba(0, 0, 0, 0.25);
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+p.cv{
+    text-indent: 0;
+    padding: 0 1em;
+    line-height: 1em;
+}
+
+.cvbutton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*SPECIFIC-PROJECTS*/
+
+div.projectbox{
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 3px;
+}
+
+h2.type{
+    margin-left: 2em;
+    font-size: 1.3em;
+}
+
+p.doc{
+    text-indent: 0;
+    text-align: center;
+}
+
+a.doc{
+    background-color: lightgrey;
+    border: 1px solid grey;
+    margin: 0 1em;
+    padding: .5em;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+
+a.doc:hover{
+    color: red;
+}
