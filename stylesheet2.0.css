@@ -315,20 +315,14 @@ a.contact:hover{
 /*all*/
 
 body{
-    background-image: url("background_edited.jpg");
+    background-image: url("images/background_edited(3.5).jpg");
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
     font-size: 100%;
     font-family: Verdana, Geneva, sans-serif;
-}
-
-.heroimg{           /*Background image*/
-    position: fixed;
-    width: auto;
-    height: 100vh;
-    box-sizing: border-box;
-    z-index: -1;  
-}
 
 /*settings*/
 
