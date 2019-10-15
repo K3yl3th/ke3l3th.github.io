@@ -1,0 +1,26 @@
+div.projectbox{
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 5px;
+}
+
+a.doc{
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 0.3em 0.5em;
+    margin-right: 0.5em;
+}
+
+a.doc:hover{
+    color: red;
+}
+
+div.citation{
+    margin: 1em 3em;
+}
+
+img.fileIcon{
+    height: 1em;
+}
