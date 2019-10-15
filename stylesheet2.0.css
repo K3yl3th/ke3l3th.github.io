@@ -188,6 +188,23 @@ div.skillname{      /*the skill name's width*/
     max-width: 10em;
 }
 
+@media only screen and (max-width: 767px) {
+    p.skillname{
+        font-size: 1em;
+        width: 20%
+    }
+    p.skilllevel{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    div.skillBox{
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
 p.skillname{        /*styles the skill name*/
     text-indent: 0;
     text-align: right;
@@ -276,7 +293,7 @@ div.experience{
     padding-bottom: 99999px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     div.experience{
         width: 94%;
         height: auto !important;
@@ -323,6 +340,7 @@ body{
     margin: 0;
     font-size: 100%;
     font-family: Verdana, Geneva, sans-serif;
+    display: block;
 }
 
 /*settings*/
