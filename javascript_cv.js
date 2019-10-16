@@ -1,3 +1,12 @@
+function showMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
 function button1(){
     document.getElementById("skillset1").style.display = "none";
     document.getElementById("skillset2").style.display = "block";
