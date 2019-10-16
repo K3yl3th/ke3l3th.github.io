@@ -44,10 +44,41 @@ span.active{
     background-color: lightgray;
 }
 
+div.cvImg{
+    margin: 2em 0;
+}
+
+p.cvImg{
+    text-align: center;
+    text-indent: 0;
+}
+
+img.cvImg{
+    width: 100%;
+    height: auto;
+    padding: 0 2em;
+    box-sizing: border-box;
+    max-width: 50em;
+}
+
+/*
 iframe{
     width: 100%;
     padding: 2em;
     box-sizing: border-box;
     height: 100vh;
     border: none;
+}
+*/
+
+#cv1{
+    display: block;
+}
+
+#cv2{
+    display: none;
+}
+
+#cv3{
+    display: none;
 }
