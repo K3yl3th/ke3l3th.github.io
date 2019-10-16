@@ -61,16 +61,6 @@ img.cvImg{
     max-width: 50em;
 }
 
-/*
-iframe{
-    width: 100%;
-    padding: 2em;
-    box-sizing: border-box;
-    height: 100vh;
-    border: none;
-}
-*/
-
 #cv1{
     display: block;
 }
