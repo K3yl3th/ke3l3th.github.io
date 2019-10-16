@@ -11,6 +11,13 @@ div.topnav{
     z-index: 1;
 }
 
+img.logo{
+    width: 3em;
+    height: auto;
+    float: left;
+    padding: 0.2em 1em;
+}
+
 div.topnav a{
     float: left;
     padding: 1em;
@@ -39,12 +46,12 @@ div.topnav a.current{
 
 @media screen and (max-width: 600px) {
    .topnav.responsive {position: relative;}
-   .topnav.responsive a.icon {
+   .topnav.responsive a.icon{
         position: absolute;
         right: 0;
         top: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive a, .topnav.responsive img.logo {
         float: none;
         display: block;
         text-align: left;
