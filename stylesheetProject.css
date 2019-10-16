@@ -24,3 +24,35 @@ div.citation{
 img.fileIcon{
     height: 1em;
 }
+
+@media screen and (max-width: 600px){
+    div.projectbox{
+        padding: 1em;
+        margin: 2em 0;
+        border-radius: 0;
+    }
+
+    div.citation{
+        margin: 1em 1em;
+    }
+
+    img.fileIcon{
+        display: none;
+    }
+
+    p.doc{
+        text-indent: 0;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1.25em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+}
