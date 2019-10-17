@@ -72,3 +72,17 @@ img.cvImg{
 #cv3{
     display: none;
 }
+
+@media screen and (max-width: 320px){
+    span.bright{
+        padding: 0 0.5em;
+    }
+
+    span.choice.middle{
+        padding: 0.5em 0.5em;
+    }
+
+    span.bleft{
+        padding: 0 0.5em;
+    }
+}
