@@ -23,14 +23,6 @@ img.logo{
     padding: 0.2em 1em;
 }
 
-div.topnav p{
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    line-height: 1em;
-    text-indent: 0em;
-}
-
 div.topnav a{
     padding: 1em;
     text-decoration: none;
@@ -70,14 +62,9 @@ div.topnav a.current{
         z-index: 5000;
     }
 
-    .responsive a{
-        float: none;
+    div.responsive a{
+        padding: 1em 0.5em;
         background-color: white;
-        width: 50vw;
-        clear: both;
-        position: relative;
-        top: 0;
-        right: 0;
     }
 }
 
